@@ -1,10 +1,5 @@
-$header-color: red;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@forward "./base/index";
+@use "./util/index";
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -32,7 +27,7 @@ $header-color: red;
   main {
     margin-top: 30px;
     h1 {
-      color: $header-color;
+      color: index.$header-color;
     }
   }
 }

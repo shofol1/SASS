@@ -1,5 +1,38 @@
+$header-color: red;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  nav {
+    margin-bottom: 10px;
+    text-align: center;
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+
+        a {
+          text-decoration: none;
+          padding: 10px 40px;
+          font-size: 18px;
+        }
+        a:hover {
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+  }
+  main {
+    margin-top: 30px;
+    h1 {
+      color: $header-color;
+    }
+  }
 }

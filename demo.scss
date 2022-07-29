@@ -1,5 +1,18 @@
 @forward "./base/index";
 @use "./util/index";
+
+@mixin pera-des($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+.btn {
+  color: white;
+  font-size: 17px;
+  padding: 10px 40px;
+  margin-top: 20px;
+  border: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -28,6 +41,20 @@
     margin-top: 30px;
     h1 {
       color: index.$header-color;
+    }
+    .des1 {
+      @include pera-des(18px, red);
+    }
+    .des2 {
+      @include pera-des(20px, blue);
+    }
+    .btn-success {
+      @extend .btn;
+      background-color: green;
+    }
+    .btn-danger {
+      @extend .btn;
+      background-color: red;
     }
   }
 }
